@@ -43,8 +43,8 @@
 - (id)initWithTitle:(NSString *)title destructiveButtonTitle:(NSString *)destructiveButtonTitle destructiveBlock:(KVActionSheetBlock)destructiveBlock cancelButtonTitle:(NSString *)cancelButtonTitle cancelBlock:(KVActionSheetBlock)cancelBlock {
     self = [super initWithTitle:title delegate:self cancelButtonTitle:cancelButtonTitle destructiveButtonTitle:destructiveButtonTitle otherButtonTitles:nil];
     if (self) {
-        self.destructiveBlock = destructiveBlock;
-        self.cancelBlock = cancelBlock;
+        self.destructiveBlock = [destructiveBlock copy];
+        self.cancelBlock = [cancelBlock copy];
         self.blocks = [NSMutableArray array];
     }
     return self;
@@ -54,7 +54,7 @@
                           block:(KVActionSheetBlock)block {
     NSUInteger buttonIndex = [super addButtonWithTitle:title];
     if (block) {
-        self.blocks[buttonIndex] = block;
+        self.blocks[buttonIndex] = [block copy];
     } else {
         self.blocks[buttonIndex] = [NSNull null];
     }
