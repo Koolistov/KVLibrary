@@ -12,28 +12,53 @@
 
 typedef void (^KVAlertViewBlock)(KVAlertView *alertView);
 
-/**
- 
- Sample usage:
- 
- KVAlertView *alert = [KVAlertView alertWithTitle:NSLocalizedString(@"Title", @"") message:NSLocalizedString(@"Message", @"") cancelButtonTitle:NSLocalizedString(@"Cancel", @"") cancelBlock:^(KVAlertView *alertView){
-     NSLog(@"Cancel");
- }];
- alert.alertViewStyle = UIAlertViewStylePlainTextInput;
- [alert addButtonWithTitle:NSLocalizedString(@"OK", @"") block:^(KVAlertView *alertView){
-     NSLog(@"OK: %@", [alertView textFieldAtIndex:0].text);
- }];
- [alert show];
+/** This subclass of UIAlertView adds support for blocks.
+
+Sample usage:
+
+    KVAlertView *alert = [KVAlertView alertWithTitle:NSLocalizedString(@"Title", @"")
+                                             message:NSLocalizedString(@"Message", @"")
+                                   cancelButtonTitle:NSLocalizedString(@"Cancel", @"")
+                                         cancelBlock:^(KVAlertView *alertView){
+                                                         NSLog(@"Cancel");
+                                                     }];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert addButtonWithTitle:NSLocalizedString(@"OK", @"") block:^(KVAlertView *alertView){
+        NSLog(@"OK: %@", [alertView textFieldAtIndex:0].text);
+    }];
+    [alert show];
  
  */
 
 @interface KVAlertView : UIAlertView
 
+/** @name Creating alert */
+
+/** Create an alert
+ *
+ * @param title Title in alert
+ * @param message Message in alert
+ * @param cancelButtonTitle Title of Cancel button in alert
+ * @param cancelBlock Block to execute when Cancel button is pressed
+ * 
+ * @return Instance of KVAlertView
+ */
 + (KVAlertView *)alertWithTitle:(NSString *)title
                         message:(NSString *)message
               cancelButtonTitle:(NSString *)cancelButtonTitle
                     cancelBlock:(KVAlertViewBlock)cancelBlock;
 
+/** Create an alert
+ *
+ * @param title Title in alert
+ * @param message Message in alert
+ * @param cancelButtonTitle Title of Cancel button in alert
+ * @param cancelBlock Block to execute when Cancel button is pressed
+ * @param confirmButtonTitle Title of Confirm (OK) button in alert
+ * @param confirmBlock Block to execute when Confirm button is pressed
+ *
+ * @return Instance of KVAlertView
+ */
 + (KVAlertView *)alertWithTitle:(NSString *)title
                         message:(NSString *)message
               cancelButtonTitle:(NSString *)cancelButtonTitle
@@ -41,19 +66,44 @@ typedef void (^KVAlertViewBlock)(KVAlertView *alertView);
              confirmButtonTitle:(NSString *)confirmButtonTitle
                    confirmBlock:(KVAlertViewBlock)confirmBlock;
 
-- (NSInteger)addButtonWithTitle:(NSString *)title
-                          block:(KVAlertViewBlock)block;
-
+/** Create and immediately show an alert
+ *
+ * @param title Title in alert
+ * @param message Message in alert
+ * @param cancelButtonTitle Title of Cancel button in alert
+ * @param cancelBlock Block to execute when Cancel button is pressed
+ */
 + (void)showWithTitle:(NSString *)title
               message:(NSString *)message
     cancelButtonTitle:(NSString *)cancelButtonTitle
           cancelBlock:(KVAlertViewBlock)cancelBlock;
 
+/** Create and immediately show an alert
+ *
+ * @param title Title in alert
+ * @param message Message in alert
+ * @param cancelButtonTitle Title of Cancel button in alert
+ * @param cancelBlock Block to execute when Cancel button is pressed
+ * @param confirmButtonTitle Title of Confirm (OK) button in alert
+ * @param confirmBlock Block to execute when Confirm button is pressed
+ */
 + (void)showWithTitle:(NSString *)title
               message:(NSString *)message
     cancelButtonTitle:(NSString *)cancelButtonTitle
           cancelBlock:(KVAlertViewBlock)cancelBlock
    confirmButtonTitle:(NSString *)confirmButtonTitle
          confirmBlock:(KVAlertViewBlock)confirmBlock;
+
+/** @name Customizing alert */
+
+/** Add a button to the alert
+ *
+ * @param title Title of button
+ * @param block Block to execute when button is pressed
+ *
+ * @return Index of added button
+ */
+- (NSInteger)addButtonWithTitle:(NSString *)title
+                          block:(KVAlertViewBlock)block;
 
 @end
