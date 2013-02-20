@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KVAlertView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">KVLibrary </a></h1>
+				<a id="developerHome" href="../index.html">Koolistov Pte. Ltd.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KVAlertView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ alertWithTitle:message:cancelButtonTitle:cancelBlock:</option>
+	
+	<option value="//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</option>
+	
+	<option value="//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ showWithTitle:message:cancelButtonTitle:cancelBlock:</option>
+	
+	<option value="//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addButtonWithTitle:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addButtonWithTitle:block:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating alert">Creating alert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing alert">Customizing alert</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:">alertWithTitle:message:cancelButtonTitle:cancelBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:">alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:">showWithTitle:message:cancelButtonTitle:cancelBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:">showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addButtonWithTitle:block:">addButtonWithTitle:block:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KVAlertView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KVAlertView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIAlertView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KVAlertView.h<br />KVAlertView.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This subclass of UIAlertView adds support for blocks.</p>
+
+<p>Sample usage:</p>
+
+<pre><code>KVAlertView *alert = [KVAlertView alertWithTitle:NSLocalizedString(@"Title", @"")
+                                         message:NSLocalizedString(@"Message", @"")
+                               cancelButtonTitle:NSLocalizedString(@"Cancel", @"")
+                                     cancelBlock:^(KVAlertView *alertView){
+                                                     NSLog(@"Cancel");
+                                                 }];
+alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+[alert addButtonWithTitle:NSLocalizedString(@"OK", @"") block:^(KVAlertView *alertView){
+    NSLog(@"OK: %@", [alertView textFieldAtIndex:0].text);
+}];
+[alert show];
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating alert" name="task_Creating alert"></a>
+						<h3 class="subsubtitle task-title">Creating alert</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:">+&nbsp;alertWithTitle:message:cancelButtonTitle:cancelBlock:</a></code>
+		<span class="tooltip"><p>Create an alert</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:">+&nbsp;alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</a></code>
+		<span class="tooltip"><p>Create an alert</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:">+&nbsp;showWithTitle:message:cancelButtonTitle:cancelBlock:</a></code>
+		<span class="tooltip"><p>Create and immediately show an alert</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:">+&nbsp;showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</a></code>
+		<span class="tooltip"><p>Create and immediately show an alert</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing alert" name="task_Customizing alert"></a>
+						<h3 class="subsubtitle task-title">Customizing alert</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addButtonWithTitle:block:">&ndash;&nbsp;addButtonWithTitle:block:</a></code>
+		<span class="tooltip"><p>Add a button to the alert</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:" title="alertWithTitle:message:cancelButtonTitle:cancelBlock:"></a>
+	<h3 class="subsubtitle method-title">alertWithTitle:message:cancelButtonTitle:cancelBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create an alert</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (KVAlertView *)alertWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> cancelButtonTitle:(NSString *)<em>cancelButtonTitle</em> cancelBlock:(KVAlertViewBlock)<em>cancelBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>Message in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelButtonTitle</em></dt>
+			<dd><p>Title of Cancel button in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelBlock</em></dt>
+			<dd><p>Block to execute when Cancel button is pressed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Instance of KVAlertView</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create an alert</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVAlertView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:" title="alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:"></a>
+	<h3 class="subsubtitle method-title">alertWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create an alert</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (KVAlertView *)alertWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> cancelButtonTitle:(NSString *)<em>cancelButtonTitle</em> cancelBlock:(KVAlertViewBlock)<em>cancelBlock</em> confirmButtonTitle:(NSString *)<em>confirmButtonTitle</em> confirmBlock:(KVAlertViewBlock)<em>confirmBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>Message in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelButtonTitle</em></dt>
+			<dd><p>Title of Cancel button in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelBlock</em></dt>
+			<dd><p>Block to execute when Cancel button is pressed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>confirmButtonTitle</em></dt>
+			<dd><p>Title of Confirm (OK) button in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>confirmBlock</em></dt>
+			<dd><p>Block to execute when Confirm button is pressed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Instance of KVAlertView</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create an alert</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVAlertView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:" title="showWithTitle:message:cancelButtonTitle:cancelBlock:"></a>
+	<h3 class="subsubtitle method-title">showWithTitle:message:cancelButtonTitle:cancelBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create and immediately show an alert</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)showWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> cancelButtonTitle:(NSString *)<em>cancelButtonTitle</em> cancelBlock:(KVAlertViewBlock)<em>cancelBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>Message in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelButtonTitle</em></dt>
+			<dd><p>Title of Cancel button in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelBlock</em></dt>
+			<dd><p>Block to execute when Cancel button is pressed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create and immediately show an alert</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVAlertView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:" title="showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:"></a>
+	<h3 class="subsubtitle method-title">showWithTitle:message:cancelButtonTitle:cancelBlock:confirmButtonTitle:confirmBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create and immediately show an alert</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)showWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> cancelButtonTitle:(NSString *)<em>cancelButtonTitle</em> cancelBlock:(KVAlertViewBlock)<em>cancelBlock</em> confirmButtonTitle:(NSString *)<em>confirmButtonTitle</em> confirmBlock:(KVAlertViewBlock)<em>confirmBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>Message in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelButtonTitle</em></dt>
+			<dd><p>Title of Cancel button in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelBlock</em></dt>
+			<dd><p>Block to execute when Cancel button is pressed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>confirmButtonTitle</em></dt>
+			<dd><p>Title of Confirm (OK) button in alert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>confirmBlock</em></dt>
+			<dd><p>Block to execute when Confirm button is pressed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create and immediately show an alert</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVAlertView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addButtonWithTitle:block:" title="addButtonWithTitle:block:"></a>
+	<h3 class="subsubtitle method-title">addButtonWithTitle:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a button to the alert</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)addButtonWithTitle:(NSString *)<em>title</em> block:(KVAlertViewBlock)<em>block</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title of button</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>Block to execute when button is pressed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Index of added button</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Add a button to the alert</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVAlertView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Koolistov Pte. Ltd.. All rights reserved. (Last updated: 2013-02-21)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>
