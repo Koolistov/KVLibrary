@@ -1,6 +1,6 @@
 //
 //  KVCarouselGestureRecognizer.m
-//  Structures
+//  KVLibrary
 //
 //  Created by Johan Kool on 24/2/2013.
 //  Copyright (c) 2013 Koolistov Pte. Ltd. All rights reserved.
