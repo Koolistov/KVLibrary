@@ -23,14 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C758176816DA6CFD004900CF /* KVCarouselTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVCarouselTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C758176816DA6CFD004900CF /* KVCarouselDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVCarouselDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C758176B16DA6CFD004900CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C758176D16DA6CFD004900CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C758176F16DA6CFD004900CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C758177316DA6CFD004900CF /* KVCarouselTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KVCarouselTest-Info.plist"; sourceTree = "<group>"; };
+		C758177316DA6CFD004900CF /* KVCarouselDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KVCarouselDemo-Info.plist"; sourceTree = "<group>"; };
 		C758177516DA6CFD004900CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C758177716DA6CFD004900CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C758177916DA6CFD004900CF /* KVCarouselTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVCarouselTest-Prefix.pch"; sourceTree = "<group>"; };
+		C758177916DA6CFD004900CF /* KVCarouselDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVCarouselDemo-Prefix.pch"; sourceTree = "<group>"; };
 		C758177A16DA6CFD004900CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C758177B16DA6CFD004900CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C758177D16DA6CFD004900CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		C758175F16DA6CFD004900CF = {
 			isa = PBXGroup;
 			children = (
-				C758177116DA6CFD004900CF /* KVCarouselTest */,
+				C758177116DA6CFD004900CF /* KVCarouselDemo */,
 				C758176A16DA6CFD004900CF /* Frameworks */,
 				C758176916DA6CFD004900CF /* Products */,
 			);
@@ -70,7 +70,7 @@
 		C758176916DA6CFD004900CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C758176816DA6CFD004900CF /* KVCarouselTest.app */,
+				C758176816DA6CFD004900CF /* KVCarouselDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C758177116DA6CFD004900CF /* KVCarouselTest */ = {
+		C758177116DA6CFD004900CF /* KVCarouselDemo */ = {
 			isa = PBXGroup;
 			children = (
 				C758177A16DA6CFD004900CF /* AppDelegate.h */,
@@ -97,16 +97,16 @@
 				C758179116DA6D4C004900CF /* KVCarousel */,
 				C758177216DA6CFD004900CF /* Supporting Files */,
 			);
-			path = KVCarouselTest;
+			path = KVCarouselDemo;
 			sourceTree = "<group>";
 		};
 		C758177216DA6CFD004900CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C758177316DA6CFD004900CF /* KVCarouselTest-Info.plist */,
+				C758177316DA6CFD004900CF /* KVCarouselDemo-Info.plist */,
 				C758177416DA6CFD004900CF /* InfoPlist.strings */,
 				C758177716DA6CFD004900CF /* main.m */,
-				C758177916DA6CFD004900CF /* KVCarouselTest-Prefix.pch */,
+				C758177916DA6CFD004900CF /* KVCarouselDemo-Prefix.pch */,
 				C758177D16DA6CFD004900CF /* Default.png */,
 				C758177F16DA6CFD004900CF /* Default@2x.png */,
 				C758178116DA6CFD004900CF /* Default-568h@2x.png */,
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C758176716DA6CFD004900CF /* KVCarouselTest */ = {
+		C758176716DA6CFD004900CF /* KVCarouselDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C758178E16DA6CFD004900CF /* Build configuration list for PBXNativeTarget "KVCarouselTest" */;
+			buildConfigurationList = C758178E16DA6CFD004900CF /* Build configuration list for PBXNativeTarget "KVCarouselDemo" */;
 			buildPhases = (
 				C758176416DA6CFD004900CF /* Sources */,
 				C758176516DA6CFD004900CF /* Frameworks */,
@@ -139,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = KVCarouselTest;
+			name = KVCarouselDemo;
 			productName = KVCarouselTest;
-			productReference = C758176816DA6CFD004900CF /* KVCarouselTest.app */;
+			productReference = C758176816DA6CFD004900CF /* KVCarouselDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Koolistov;
 			};
-			buildConfigurationList = C758176316DA6CFD004900CF /* Build configuration list for PBXProject "KVCarouselTest" */;
+			buildConfigurationList = C758176316DA6CFD004900CF /* Build configuration list for PBXProject "KVCarouselDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C758176716DA6CFD004900CF /* KVCarouselTest */,
+				C758176716DA6CFD004900CF /* KVCarouselDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -290,9 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KVCarouselTest/KVCarouselTest-Prefix.pch";
-				INFOPLIST_FILE = "KVCarouselTest/KVCarouselTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KVCarouselDemo/KVCarouselDemo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/KVCarouselDemo/KVCarouselDemo-Info.plist";
+				PRODUCT_NAME = KVCarouselDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -301,9 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KVCarouselTest/KVCarouselTest-Prefix.pch";
-				INFOPLIST_FILE = "KVCarouselTest/KVCarouselTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KVCarouselDemo/KVCarouselDemo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/KVCarouselDemo/KVCarouselDemo-Info.plist";
+				PRODUCT_NAME = KVCarouselDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C758176316DA6CFD004900CF /* Build configuration list for PBXProject "KVCarouselTest" */ = {
+		C758176316DA6CFD004900CF /* Build configuration list for PBXProject "KVCarouselDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C758178C16DA6CFD004900CF /* Debug */,
@@ -320,13 +320,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C758178E16DA6CFD004900CF /* Build configuration list for PBXNativeTarget "KVCarouselTest" */ = {
+		C758178E16DA6CFD004900CF /* Build configuration list for PBXNativeTarget "KVCarouselDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C758178F16DA6CFD004900CF /* Debug */,
 				C758179016DA6CFD004900CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
