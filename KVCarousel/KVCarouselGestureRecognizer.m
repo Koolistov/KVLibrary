@@ -87,7 +87,7 @@
                 [self.delegate recognizer:self didStartInDirection:_direction];
             }
 
-            KVCarouselResult expectedResult = [self expectedResult];
+            KVCarouselResult expectedResult = [self expectedResultWithVelocity:NO];
             if (_expectedResult != expectedResult) {
                 if ([self.delegate respondsToSelector:@selector(recognizer:expectedResultChangedTo:inDirection:)]) {
                     [self.delegate recognizer:self expectedResultChangedTo:expectedResult inDirection:_direction];
@@ -105,7 +105,7 @@
 
             [self adjustViewLocations];
 
-            KVCarouselResult expectedResult = [self expectedResult];
+            KVCarouselResult expectedResult = [self expectedResultWithVelocity:NO];
             if (_expectedResult != expectedResult) {
                 if ([self.delegate respondsToSelector:@selector(recognizer:expectedResultChangedTo:inDirection:)]) {
                     [self.delegate recognizer:self expectedResultChangedTo:expectedResult inDirection:_direction];
@@ -115,7 +115,7 @@
         }
             break;
         case UIGestureRecognizerStateEnded: {
-            KVCarouselResult expectedResult = [self expectedResult];
+            KVCarouselResult expectedResult = [self expectedResultWithVelocity:YES];
             if ([self.delegate respondsToSelector:@selector(recognizer:willEndWithResult:inDirection:)]) {
                 [self.delegate recognizer:self willEndWithResult:expectedResult inDirection:_direction];
             }
@@ -157,7 +157,7 @@
     return resultToLoad;
 }
 
-- (KVCarouselResult)expectedResult {
+- (KVCarouselResult)expectedResultWithVelocity:(BOOL)allowVelocity {
     KVCarouselResult expectedResult = KVCarouselResultCurrent;
     CGPoint translation = [self translationInView:self.view.superview];
     CGPoint velocity = [self velocityInView:self.view.superview];
@@ -165,11 +165,11 @@
         CGFloat translationX = MAX(MIN(translation.x, CGRectGetWidth(self.view.frame) + self.gapSize.width), -CGRectGetWidth(self.view.frame) - self.gapSize.width);
         CGFloat halfWidth = 0.5f * CGRectGetWidth(self.view.frame) + 0.5f * self.gapSize.width;
         
-        if ((translationX < -halfWidth) || (velocity.x * kAnimationDuration < -halfWidth)) {
+        if ((translationX < -halfWidth) || (allowVelocity && (velocity.x * kAnimationDuration < -halfWidth))) {
             if (_nextResultAvailable) {
                 expectedResult = KVCarouselResultNext;
             }
-        } else if ((translationX > halfWidth) || (velocity.x * kAnimationDuration > halfWidth)) {
+        } else if ((translationX > halfWidth) || (allowVelocity && (velocity.x * kAnimationDuration > halfWidth))) {
             if (_previousResultAvailable) {
                 expectedResult = KVCarouselResultPrevious;
             }
@@ -178,11 +178,11 @@
         CGFloat translationY = MAX(MIN(translation.y, CGRectGetHeight(self.view.frame) + self.gapSize.height), -CGRectGetHeight(self.view.frame) - self.gapSize.height);
         CGFloat halfHeight = 0.5f * CGRectGetHeight(self.view.frame) + 0.5f * self.gapSize.height;
 
-        if ((translationY < -halfHeight) || (velocity.y * kAnimationDuration < -halfHeight)) {
+        if ((translationY < -halfHeight) || (allowVelocity && (velocity.y * kAnimationDuration < -halfHeight))) {
             if (_nextResultAvailable) {
                 expectedResult = KVCarouselResultNext;
             }
-        } else if ((translationY > halfHeight) || (velocity.y * kAnimationDuration > halfHeight)) {
+        } else if ((translationY > halfHeight) || (allowVelocity && (velocity.y * kAnimationDuration > halfHeight))) {
             if (_previousResultAvailable) {
                 expectedResult = KVCarouselResultPrevious;
             }
