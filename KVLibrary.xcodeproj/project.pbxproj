@@ -1,0 +1,130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C758174516D90999004900CF /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		C758174716D90999004900CF /* KVActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVActionSheet.h; sourceTree = "<group>"; };
+		C758174816D90999004900CF /* KVActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVActionSheet.m; sourceTree = "<group>"; };
+		C758174A16D90999004900CF /* KVAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVAlertView.h; sourceTree = "<group>"; };
+		C758174B16D90999004900CF /* KVAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVAlertView.m; sourceTree = "<group>"; };
+		C758174C16D90999004900CF /* KVLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVLibrary.h; sourceTree = "<group>"; };
+		C758174E16D90999004900CF /* KVServiceContainer-Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVServiceContainer-Protected.h"; sourceTree = "<group>"; };
+		C758174F16D90999004900CF /* KVServiceContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVServiceContainer.h; sourceTree = "<group>"; };
+		C758175016D90999004900CF /* KVServiceContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVServiceContainer.m; sourceTree = "<group>"; };
+		C758175116D90999004900CF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C758175216D90999004900CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCarouselGestureRecognizer.h; sourceTree = "<group>"; };
+		C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCarouselGestureRecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C758172C16D90961004900CF = {
+			isa = PBXGroup;
+			children = (
+				C758174516D90999004900CF /* AppledocSettings.plist */,
+				C758174C16D90999004900CF /* KVLibrary.h */,
+				C758174616D90999004900CF /* KVActionSheet */,
+				C758174916D90999004900CF /* KVAlertView */,
+				C765319F16DBCFCB00C97287 /* KVCarousel */,
+				C758174D16D90999004900CF /* KVServiceContainer */,
+				C758175116D90999004900CF /* LICENSE */,
+				C758175216D90999004900CF /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		C758174616D90999004900CF /* KVActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C758174716D90999004900CF /* KVActionSheet.h */,
+				C758174816D90999004900CF /* KVActionSheet.m */,
+			);
+			path = KVActionSheet;
+			sourceTree = "<group>";
+		};
+		C758174916D90999004900CF /* KVAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C758174A16D90999004900CF /* KVAlertView.h */,
+				C758174B16D90999004900CF /* KVAlertView.m */,
+			);
+			path = KVAlertView;
+			sourceTree = "<group>";
+		};
+		C758174D16D90999004900CF /* KVServiceContainer */ = {
+			isa = PBXGroup;
+			children = (
+				C758174E16D90999004900CF /* KVServiceContainer-Protected.h */,
+				C758174F16D90999004900CF /* KVServiceContainer.h */,
+				C758175016D90999004900CF /* KVServiceContainer.m */,
+			);
+			path = KVServiceContainer;
+			sourceTree = "<group>";
+		};
+		C765319F16DBCFCB00C97287 /* KVCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */,
+				C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */,
+			);
+			path = KVCarousel;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C758172D16D90961004900CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KV;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Koolistov Pte. Ltd.";
+			};
+			buildConfigurationList = C758173016D90961004900CF /* Build configuration list for PBXProject "KVLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C758172C16D90961004900CF;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C758173116D90961004900CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C758173216D90961004900CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C758173016D90961004900CF /* Build configuration list for PBXProject "KVLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C758173116D90961004900CF /* Debug */,
+				C758173216D90961004900CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C758172D16D90961004900CF /* Project object */;
+}
