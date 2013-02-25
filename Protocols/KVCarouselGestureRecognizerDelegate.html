@@ -1,0 +1,762 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KVCarouselGestureRecognizerDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">KVLibrary </a></h1>
+				<a id="developerHome" href="../index.html">Koolistov Pte. Ltd.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KVCarouselGestureRecognizerDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/recognizer:canChangeToResult:inDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:canChangeToResult:inDirection:</option>
+	
+	<option value="//api/name/recognizer:didEndWithResult:inDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:didEndWithResult:inDirection:</option>
+	
+	<option value="//api/name/recognizer:didStartInDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:didStartInDirection:</option>
+	
+	<option value="//api/name/recognizer:expectedResultChangedTo:inDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:expectedResultChangedTo:inDirection:</option>
+	
+	<option value="//api/name/recognizer:updateViewForResult:inDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:updateViewForResult:inDirection:</option>
+	
+	<option value="//api/name/recognizer:willEndWithResult:inDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:willEndWithResult:inDirection:</option>
+	
+	<option value="//api/name/recognizer:willStartInDirection:">&nbsp;&nbsp;&nbsp;&nbsp;- recognizer:willStartInDirection:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Carousel boundaries and content">Carousel boundaries and content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Starting and stopping">Starting and stopping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Carousel events">Carousel events</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:canChangeToResult:inDirection:">recognizer:canChangeToResult:inDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:didEndWithResult:inDirection:">recognizer:didEndWithResult:inDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:didStartInDirection:">recognizer:didStartInDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:expectedResultChangedTo:inDirection:">recognizer:expectedResultChangedTo:inDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:updateViewForResult:inDirection:">recognizer:updateViewForResult:inDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:willEndWithResult:inDirection:">recognizer:willEndWithResult:inDirection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizer:willStartInDirection:">recognizer:willStartInDirection:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KVCarouselGestureRecognizerDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KVCarouselGestureRecognizerDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KVCarouselGestureRecognizer.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Protocol to be implemented by delegates of <a href="../Classes/KVCarouselGestureRecognizer.html">KVCarouselGestureRecognizer</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Carousel boundaries and content" name="task_Carousel boundaries and content"></a>
+						<h3 class="subsubtitle task-title">Carousel boundaries and content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:canChangeToResult:inDirection:">&ndash;&nbsp;recognizer:canChangeToResult:inDirection:</a></code>
+		<span class="tooltip"><p>Asks the delegate wether it can provide a result in a given direction. This method is optional. If not present, <code>YES</code> is assumed.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:updateViewForResult:inDirection:">&ndash;&nbsp;recognizer:updateViewForResult:inDirection:</a></code>
+		<span class="tooltip"><p>Asks the delegate to update the view for a change in a direction.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Starting and stopping" name="task_Starting and stopping"></a>
+						<h3 class="subsubtitle task-title">Starting and stopping</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:willStartInDirection:">&ndash;&nbsp;recognizer:willStartInDirection:</a></code>
+		<span class="tooltip"><p>Informs the delegate that the user is about to start panning the view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:didStartInDirection:">&ndash;&nbsp;recognizer:didStartInDirection:</a></code>
+		<span class="tooltip"><p>Informs the delegate that the user did start panning the view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:willEndWithResult:inDirection:">&ndash;&nbsp;recognizer:willEndWithResult:inDirection:</a></code>
+		<span class="tooltip"><p>Informs the delegate that the user is about to end panning the view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:didEndWithResult:inDirection:">&ndash;&nbsp;recognizer:didEndWithResult:inDirection:</a></code>
+		<span class="tooltip"><p>Informs the delegate that the user did end panning the view.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Carousel events" name="task_Carousel events"></a>
+						<h3 class="subsubtitle task-title">Carousel events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognizer:expectedResultChangedTo:inDirection:">&ndash;&nbsp;recognizer:expectedResultChangedTo:inDirection:</a></code>
+		<span class="tooltip"><p>Informs the delegate that the expected outcome of the panning has changed.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:canChangeToResult:inDirection:" title="recognizer:canChangeToResult:inDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:canChangeToResult:inDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate wether it can provide a result in a given direction. This method is optional. If not present, <code>YES</code> is assumed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> canChangeToResult:(KVCarouselResult)<em>result</em> inDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>Result of change</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return <code>YES</code> if changing is possible, <code>NO</code> if not possible.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asks the delegate wether it can provide a result in a given direction. This method is optional. If not present, <code>YES</code> is assumed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:didEndWithResult:inDirection:" title="recognizer:didEndWithResult:inDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:didEndWithResult:inDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Informs the delegate that the user did end panning the view.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> didEndWithResult:(KVCarouselResult)<em>result</em> inDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>End result of change</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Informs the delegate that the user did end panning the view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:didStartInDirection:" title="recognizer:didStartInDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:didStartInDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Informs the delegate that the user did start panning the view.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> didStartInDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Informs the delegate that the user did start panning the view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:expectedResultChangedTo:inDirection:" title="recognizer:expectedResultChangedTo:inDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:expectedResultChangedTo:inDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Informs the delegate that the expected outcome of the panning has changed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> expectedResultChangedTo:(KVCarouselResult)<em>result</em> inDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>Expected result of change</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Informs the delegate that the expected outcome of the panning has changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:updateViewForResult:inDirection:" title="recognizer:updateViewForResult:inDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:updateViewForResult:inDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the delegate to update the view for a change in a direction.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> updateViewForResult:(KVCarouselResult)<em>result</em> inDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>Result of change</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return <code>YES</code> if changing is possible, <code>NO</code> if not possible.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asks the delegate to update the view for a change in a direction.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:willEndWithResult:inDirection:" title="recognizer:willEndWithResult:inDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:willEndWithResult:inDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Informs the delegate that the user is about to end panning the view.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> willEndWithResult:(KVCarouselResult)<em>result</em> inDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>result</em></dt>
+			<dd><p>End result of change</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Informs the delegate that the user is about to end panning the view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizer:willStartInDirection:" title="recognizer:willStartInDirection:"></a>
+	<h3 class="subsubtitle method-title">recognizer:willStartInDirection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Informs the delegate that the user is about to start panning the view.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)recognizer:(KVCarouselGestureRecognizer *)<em>recognizer</em> willStartInDirection:(KVCarouselDirection)<em>direction</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>Recognizer</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction of change</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Informs the delegate that the user is about to start panning the view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Koolistov Pte. Ltd.. All rights reserved. (Last updated: 2013-02-26)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>
