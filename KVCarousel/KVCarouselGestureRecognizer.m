@@ -56,7 +56,7 @@
             } else {
                 _direction = KVCarouselDirectionHorizontal;
             }
-            if (!(_direction | self.allowedDirections)) {
+            if (!(_direction & self.allowedDirections)) {
                 _direction = self.allowedDirections;
             }
 
