@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KVCarouselGestureRecognizer Class Reference</title>
+		<title>KVOptionsViewController Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KVCarouselGestureRecognizer Class Reference</h1>
+				<h1 class="hideInXcode">KVOptionsViewController Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -40,13 +40,11 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/allowedDirections">&nbsp;&nbsp;&nbsp;&nbsp;allowedDirections</option>
+	<option value="//api/name/currentSelection">&nbsp;&nbsp;&nbsp;&nbsp;currentSelection</option>
 	
-	<option value="//api/name/bounces">&nbsp;&nbsp;&nbsp;&nbsp;bounces</option>
+	<option value="//api/name/optionLabels">&nbsp;&nbsp;&nbsp;&nbsp;optionLabels</option>
 	
-	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
-	
-	<option value="//api/name/gapSize">&nbsp;&nbsp;&nbsp;&nbsp;gapSize</option>
+	<option value="//api/name/selectionHandler">&nbsp;&nbsp;&nbsp;&nbsp;selectionHandler</option>
 	
 	
 	
@@ -68,9 +66,9 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Carousel delegate">Carousel delegate</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setup">Setup</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring carousel behavior">Configuring carousel behavior</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling response">Handling response</a></span></li>
 	
 </ul></li>
 
@@ -80,13 +78,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowedDirections">allowedDirections</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentSelection">currentSelection</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bounces">bounces</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/optionLabels">optionLabels</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gapSize">gapSize</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionHandler">selectionHandler</a></span></li>
 	
 </ul></li>
 
@@ -99,7 +95,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KVCarouselGestureRecognizer Class Reference" name="top"></a>
+				<a title="KVOptionsViewController Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -108,7 +104,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KVCarouselGestureRecognizer Class Reference</h1>
+						<h1 class="title title-header">KVOptionsViewController Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -116,10 +112,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">UIPanGestureRecognizer</td>
+	<td class="specification-value">UITableViewController</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KVCarouselGestureRecognizer.h<br />KVCarouselGestureRecognizer.m</td>
+	<td class="specification-value">KVOptionsViewController.h<br />KVOptionsViewController.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -129,7 +125,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This gesture recognizer lets you add interactive carousel-like behavior to any view. The gesture recognizer <a href="#//api/name/delegate">delegate</a> is extended with the methods from the <a href="../Protocols/KVCarouselGestureRecognizerDelegate.html">KVCarouselGestureRecognizerDelegate</a> protocol.</p>
+						<p><code>KVOptionsViewController</code> provides a generic way to let use pick an option from a list.</p>
 					</div>
 					
 					
@@ -141,14 +137,21 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Carousel delegate" name="task_Carousel delegate"></a>
-						<h3 class="subsubtitle task-title">Carousel delegate</h3>
+						<a title="Setup" name="task_Setup"></a>
+						<h3 class="subsubtitle task-title">Setup</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-		<span class="tooltip"><p>Delegate.</p></span>
+		<code><a href="#//api/name/optionLabels">&nbsp;&nbsp;optionLabels</a></code>
+		<span class="tooltip"><p>Labels for options to show in list.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentSelection">&nbsp;&nbsp;currentSelection</a></code>
+		<span class="tooltip"><p>Index of label that currently has the checkmark. Pass in NSNotFound if no current selection exists.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -156,28 +159,14 @@
 						</ul>
 						
 						
-						<a title="Configuring carousel behavior" name="task_Configuring carousel behavior"></a>
-						<h3 class="subsubtitle task-title">Configuring carousel behavior</h3>
+						<a title="Handling response" name="task_Handling response"></a>
+						<h3 class="subsubtitle task-title">Handling response</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/allowedDirections">&nbsp;&nbsp;allowedDirections</a></code>
-		<span class="tooltip"><p>Bitmask of allowed directions of swiping in carousel. Defaults to <code>KVCarouselDirectionHorizontal</code>.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/bounces">&nbsp;&nbsp;bounces</a></code>
-		<span class="tooltip"><p>Toggles bouncing at the edges. Defaults to <code>YES</code>.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/gapSize">&nbsp;&nbsp;gapSize</a></code>
-		<span class="tooltip"><p>Sets the size of the gap between views. Defaults to <code>CGSizeZero</code>.</p></span>
+		<code><a href="#//api/name/selectionHandler">&nbsp;&nbsp;selectionHandler</a></code>
+		<span class="tooltip"><p>Block that will be called when the user has selected an option from the list.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -195,17 +184,17 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/allowedDirections" title="allowedDirections"></a>
-	<h3 class="subsubtitle method-title">allowedDirections</h3>
+	<a name="//api/name/currentSelection" title="currentSelection"></a>
+	<h3 class="subsubtitle method-title">currentSelection</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Bitmask of allowed directions of swiping in carousel. Defaults to <code>KVCarouselDirectionHorizontal</code>.</p>
+		<p>Index of label that currently has the checkmark. Pass in NSNotFound if no current selection exists.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) KVCarouselDirection allowedDirections</code></div>
+	<div class="method-subsection method-declaration"><code>@property NSUInteger currentSelection</code></div>
 	
 	
 	
@@ -216,7 +205,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Bitmask of allowed directions of swiping in carousel. Defaults to <code>KVCarouselDirectionHorizontal</code>.</p>
+		<p>Index of label that currently has the checkmark. Pass in NSNotFound if no current selection exists.</p>
 	</div>
 	
 	
@@ -227,24 +216,24 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+		<code class="declared-in-ref">KVOptionsViewController.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/bounces" title="bounces"></a>
-	<h3 class="subsubtitle method-title">bounces</h3>
+	<a name="//api/name/optionLabels" title="optionLabels"></a>
+	<h3 class="subsubtitle method-title">optionLabels</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Toggles bouncing at the edges. Defaults to <code>YES</code>.</p>
+		<p>Labels for options to show in list.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL bounces</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *optionLabels</code></div>
 	
 	
 	
@@ -255,7 +244,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Toggles bouncing at the edges. Defaults to <code>YES</code>.</p>
+		<p>Labels for options to show in list.</p>
 	</div>
 	
 	
@@ -266,24 +255,24 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+		<code class="declared-in-ref">KVOptionsViewController.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="subsubtitle method-title">delegate</h3>
+	<a name="//api/name/selectionHandler" title="selectionHandler"></a>
+	<h3 class="subsubtitle method-title">selectionHandler</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Delegate.</p>
+		<p>Block that will be called when the user has selected an option from the list.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;KVCarouselGestureRecognizerDelegate,UIGestureRecognizerDelegate&gt; delegate</code></div>
+	<div class="method-subsection method-declaration"><code>@property (copy) void ( ^ ) ( NSUInteger selectedOptionIndex ) selectionHandler</code></div>
 	
 	
 	
@@ -294,7 +283,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Delegate.</p>
+		<p>Block that will be called when the user has selected an option from the list.</p>
 	</div>
 	
 	
@@ -305,46 +294,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/gapSize" title="gapSize"></a>
-	<h3 class="subsubtitle method-title">gapSize</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sets the size of the gap between views. Defaults to <code>CGSizeZero</code>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize gapSize</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Sets the size of the gap between views. Defaults to <code>CGSizeZero</code>.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KVCarouselGestureRecognizer.h</code><br />
+		<code class="declared-in-ref">KVOptionsViewController.h</code><br />
 	</div>				
 	
 	
