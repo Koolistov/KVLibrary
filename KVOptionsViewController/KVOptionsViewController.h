@@ -13,6 +13,8 @@
  */
 @interface KVOptionsViewController : UITableViewController
 
+/** @name Setup */
+
 /**
  * Labels for options to show in list.
  */
@@ -22,6 +24,8 @@
  * Index of label that currently has the checkmark. Pass in NSNotFound if no current selection exists.
  */
 @property NSUInteger currentSelection;
+
+/** @name Handling response */
 
 /**
  * Block that will be called when the user has selected an option from the list.
