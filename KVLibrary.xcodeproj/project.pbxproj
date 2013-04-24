@@ -20,6 +20,8 @@
 		C758175216D90999004900CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCarouselGestureRecognizer.h; sourceTree = "<group>"; };
 		C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCarouselGestureRecognizer.m; sourceTree = "<group>"; };
+		C7B91F5B1728430600F8FFD7 /* KVOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOptionsViewController.h; sourceTree = "<group>"; };
+		C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOptionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -32,6 +34,7 @@
 				C758174916D90999004900CF /* KVAlertView */,
 				C765319F16DBCFCB00C97287 /* KVCarousel */,
 				C758174D16D90999004900CF /* KVServiceContainer */,
+				C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */,
 				C758175116D90999004900CF /* LICENSE */,
 				C758175216D90999004900CF /* README.md */,
 			);
@@ -73,6 +76,15 @@
 			);
 			path = KVCarousel;
 			sourceTree = SOURCE_ROOT;
+		};
+		C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7B91F5B1728430600F8FFD7 /* KVOptionsViewController.h */,
+				C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */,
+			);
+			path = KVOptionsViewController;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
