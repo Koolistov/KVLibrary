@@ -11,8 +11,8 @@
 @class KVCarouselGestureRecognizer;
 
 typedef NS_OPTIONS(NSInteger, KVCarouselDirection) {
-    KVCarouselDirectionHorizontal,
-    KVCarouselDirectionVertical
+    KVCarouselDirectionHorizontal = 1 << 0,
+    KVCarouselDirectionVertical = 1 << 1
 };
 
 typedef NS_ENUM(NSInteger, KVCarouselResult) {

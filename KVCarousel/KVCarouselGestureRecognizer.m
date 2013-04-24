@@ -54,7 +54,7 @@
             } else {
                 _direction = KVCarouselDirectionHorizontal;
             }
-            if (!(_direction | self.allowedDirections)) {
+            if (!(_direction & self.allowedDirections)) {
                 _direction = self.allowedDirections;
             }
 
@@ -76,7 +76,6 @@
             KVCarouselResult resultToLoad = [self resultToLoad];
             if (_loadedResult != resultToLoad) {
                 [self loadResult:resultToLoad];
-                _loadedResult = resultToLoad;
             }
 
             [self adjustViewLocations];
@@ -98,7 +97,6 @@
             KVCarouselResult resultToLoad = [self resultToLoad];
             if (_loadedResult != resultToLoad) {
                 [self loadResult:resultToLoad];
-                _loadedResult = resultToLoad;
             }
 
             [self adjustViewLocations];
@@ -199,6 +197,7 @@
             if ([self.delegate respondsToSelector:@selector(recognizer:updateViewForResult:inDirection:)]) {
                 [self.delegate recognizer:self updateViewForResult:resultToLoad inDirection:_direction];
             }
+            _loadedResult = resultToLoad;
         }
     } else if (resultToLoad == KVCarouselResultPrevious) {
         // Update view for previous state here
@@ -209,12 +208,14 @@
             if ([self.delegate respondsToSelector:@selector(recognizer:updateViewForResult:inDirection:)]) {
                 [self.delegate recognizer:self updateViewForResult:resultToLoad inDirection:_direction];
             }
+            _loadedResult = resultToLoad;
         }
     } else if (resultToLoad == KVCarouselResultCurrent) {
         // Update view for current state here
         if ([self.delegate respondsToSelector:@selector(recognizer:updateViewForResult:inDirection:)]) {
             [self.delegate recognizer:self updateViewForResult:resultToLoad inDirection:_direction];
         }
+        _loadedResult = resultToLoad;
     }
 }
 
@@ -228,21 +229,14 @@
             actualViewFrame.origin.x = -CGRectGetWidth(self.view.frame) + translationX;
             actualViewFrame.origin.x -= self.gapSize.width;
             self.view.hidden = NO;
-        } else if (_loadedResult == KVCarouselResultPrevious && !_previousResultAvailable) {
-            if (!self.bounces) {
-                translationX = 0.0f;
-            }
-            self.view.hidden = YES;
         } else if (_loadedResult == KVCarouselResultNext && _nextResultAvailable) {
             actualViewFrame.origin.x = CGRectGetWidth(self.view.frame) + translationX;
             actualViewFrame.origin.x += self.gapSize.width;
             self.view.hidden = NO;
-        } else if (_loadedResult == KVCarouselResultNext && !_nextResultAvailable) {
+        } else {
             if (!self.bounces) {
                 translationX = 0.0f;
             }
-            self.view.hidden = YES;
-        } else {
             self.view.hidden = YES;
         }
         self.view.frame = actualViewFrame;
@@ -258,21 +252,14 @@
             actualViewFrame.origin.y = -CGRectGetHeight(self.view.frame) + translationY;
             actualViewFrame.origin.y -= self.gapSize.height;
             self.view.hidden = NO;
-        } else if (_loadedResult == KVCarouselResultPrevious && !_previousResultAvailable) {
-            if (!self.bounces) {
-                translationY = 0.0f;
-            }
-            self.view.hidden = YES;
         } else if (_loadedResult == KVCarouselResultNext && _nextResultAvailable) {
             actualViewFrame.origin.y = CGRectGetHeight(self.view.frame) + translationY;
             actualViewFrame.origin.y += self.gapSize.height;
             self.view.hidden = NO;
-        } else if (_loadedResult == KVCarouselResultNext && !_nextResultAvailable) {
+        } else {
             if (!self.bounces) {
                 translationY = 0.0f;
             }
-            self.view.hidden = YES;
-        } else {
             self.view.hidden = YES;
         }
         self.view.frame = actualViewFrame;
