@@ -15,7 +15,6 @@
 @interface KVCarouselGestureRecognizer () {
     UIImageView *_temporaryImageView;
     CGPoint _originalOrigin;
-    CGPoint _lastTranslation;
     KVCarouselDirection _direction;
     KVCarouselResult _loadedResult;
     KVCarouselResult _expectedResult;
@@ -50,7 +49,6 @@
 
             // Determine direction
             CGPoint translation = [self translationInView:self.view.superview];
-             _lastTranslation = translation;
             if (fabsf(translation.y) > fabsf(translation.x)) {
                 _direction = KVCarouselDirectionVertical;
             } else {
