@@ -10,8 +10,6 @@
 
 @interface KVActionSheet () <UIActionSheetDelegate>
 
-@property (nonatomic, copy) KVActionSheetBlock cancelBlock;
-@property (nonatomic, copy) KVActionSheetBlock destructiveBlock;
 @property (nonatomic, strong) NSMutableArray *blocks;
 
 @end
@@ -25,6 +23,15 @@
                             cancelBlock:(KVActionSheetBlock)cancelBlock {
     KVActionSheet *actionSheet = [[KVActionSheet alloc] initWithTitle:title destructiveButtonTitle:destructiveButtonTitle destructiveBlock:destructiveBlock cancelButtonTitle:cancelButtonTitle cancelBlock:cancelBlock];
     return actionSheet;
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.delegate = self;
+        self.blocks = [NSMutableArray array];
+    }
+    return self;
 }
 
 - (id)initWithTitle:(NSString *)title delegate:(id<UIActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION {
@@ -43,9 +50,21 @@
 - (id)initWithTitle:(NSString *)title destructiveButtonTitle:(NSString *)destructiveButtonTitle destructiveBlock:(KVActionSheetBlock)destructiveBlock cancelButtonTitle:(NSString *)cancelButtonTitle cancelBlock:(KVActionSheetBlock)cancelBlock {
     self = [super initWithTitle:title delegate:self cancelButtonTitle:cancelButtonTitle destructiveButtonTitle:destructiveButtonTitle otherButtonTitles:nil];
     if (self) {
-        self.destructiveBlock = [destructiveBlock copy];
-        self.cancelBlock = [cancelBlock copy];
         self.blocks = [NSMutableArray array];
+        if (destructiveButtonTitle) {
+            if (destructiveBlock) {
+                [self.blocks addObject:[destructiveBlock copy]];
+            } else {
+                [self.blocks addObject:[NSNull null]];
+            }
+        }
+        if (cancelButtonTitle) {
+            if (cancelBlock) {
+                [self.blocks addObject:[cancelBlock copy]];
+            } else {
+                [self.blocks addObject:[NSNull null]];
+            }
+        }
     }
     return self;
 }
@@ -66,14 +85,11 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    id blockOrNull = nil;
-    if (buttonIndex == actionSheet.destructiveButtonIndex) {
-        blockOrNull = self.destructiveBlock;
-    } else if (buttonIndex == actionSheet.cancelButtonIndex) {
-        blockOrNull = self.cancelBlock;
-    } else {
-        blockOrNull = self.blocks[buttonIndex];
+    if (buttonIndex < 0) {
+        return;
     }
+    
+    id blockOrNull = self.blocks[buttonIndex];;
     
     if (blockOrNull != nil && blockOrNull != [NSNull null]) {
         KVActionSheetBlock block = (KVActionSheetBlock)blockOrNull;
