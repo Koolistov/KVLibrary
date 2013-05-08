@@ -94,6 +94,14 @@ Sample usage:
    confirmButtonTitle:(NSString *)confirmButtonTitle
          confirmBlock:(KVAlertViewBlock)confirmBlock;
 
+/** Create and immediately show an alert for an NSError
+ *
+ * The error will also be logged if DEBUG is defined. The title is based on the localized description. The message is based on the localized failure reason and recovery suggestion. Buttons are addded for recovery options.
+ *
+ * @param error Error to show in alert
+ */
++ (void)showForError:(NSError *)error;
+
 /** @name Customizing alert */
 
 /** Add a button to the alert

@@ -97,6 +97,32 @@
     [alertView show];
 }
 
++ (void)showForError:(NSError *)error {
+#ifdef DEBUG
+    NSLog(@"Presenting alert for error: %@", error);
+#endif
+    
+    NSString *title = [error localizedDescription];
+    NSString *message = [NSString stringWithFormat:@"%@\n\n%@",
+                         [error localizedFailureReason] ? [error localizedFailureReason] : @"",
+                         [error localizedRecoverySuggestion] ? [error localizedRecoverySuggestion] : @""];
+    message = [message stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+    KVAlertView *alertView = [self alertWithTitle:title message:message cancelButtonTitle:NSLocalizedString(@"Dismiss", @"") cancelBlock:nil];
+
+    NSArray *suggestions = [error localizedRecoveryOptions];
+    [suggestions enumerateObjectsUsingBlock:^(NSString *suggestion, NSUInteger idx, BOOL *stop) {
+        [alertView addButtonWithTitle:suggestion block:^(KVAlertView *alertView) {
+            BOOL result = [[error recoveryAttempter] attemptRecoveryFromError:error optionIndex:idx];
+            if (!result) {
+                [KVAlertView showForError:error];
+            }
+        }];
+    }];
+
+    [alertView show];
+}
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     id blockOrNull = self.blocks[buttonIndex];
     if (blockOrNull != [NSNull null]) {
