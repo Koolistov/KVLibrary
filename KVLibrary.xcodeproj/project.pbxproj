@@ -20,6 +20,9 @@
 		C758175216D90999004900CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCarouselGestureRecognizer.h; sourceTree = "<group>"; };
 		C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCarouselGestureRecognizer.m; sourceTree = "<group>"; };
+		C7A32F2A17FE6EDA00178643 /* NSString+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		C7A32F2B17FE6EDA00178643 /* NSString+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		C7A32F2C17FE6F5600178643 /* KVMACROS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVMACROS.h; sourceTree = "<group>"; };
 		C7B91F5B1728430600F8FFD7 /* KVOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOptionsViewController.h; sourceTree = "<group>"; };
 		C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOptionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,11 +33,13 @@
 			children = (
 				C758174516D90999004900CF /* AppledocSettings.plist */,
 				C758174C16D90999004900CF /* KVLibrary.h */,
+				C7A32F2C17FE6F5600178643 /* KVMACROS.h */,
 				C758174616D90999004900CF /* KVActionSheet */,
 				C758174916D90999004900CF /* KVAlertView */,
 				C765319F16DBCFCB00C97287 /* KVCarousel */,
 				C758174D16D90999004900CF /* KVServiceContainer */,
 				C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */,
+				C7A32F2917FE6EDA00178643 /* NSString+Utilities */,
 				C758175116D90999004900CF /* LICENSE */,
 				C758175216D90999004900CF /* README.md */,
 			);
@@ -76,6 +81,15 @@
 			);
 			path = KVCarousel;
 			sourceTree = SOURCE_ROOT;
+		};
+		C7A32F2917FE6EDA00178643 /* NSString+Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C7A32F2A17FE6EDA00178643 /* NSString+Utilities.h */,
+				C7A32F2B17FE6EDA00178643 /* NSString+Utilities.m */,
+			);
+			path = "NSString+Utilities";
+			sourceTree = "<group>";
 		};
 		C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */ = {
 			isa = PBXGroup;
