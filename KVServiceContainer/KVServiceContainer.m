@@ -38,12 +38,12 @@
 }
 
 - (id)serviceForKey:(NSUInteger)serviceKey {
-    return [self.services objectForKey:[NSNumber numberWithInt:serviceKey]];
+    return [self.services objectForKey:[NSNumber numberWithInteger:serviceKey]];
 }
 
 - (id)serviceForKey:(NSUInteger)serviceKey initializer:(id (^)(void))initializer {
     @synchronized(self) {
-        id service = [self.services objectForKey:[NSNumber numberWithInt:serviceKey]];
+        id service = [self.services objectForKey:[NSNumber numberWithInteger:serviceKey]];
 
         if (service == nil && initializer != nil) {
             service = initializer();
@@ -57,7 +57,7 @@
 }
 
 - (void)setService:(id)service forKey:(NSUInteger)serviceKey {
-    [self.services setObject:service forKey:[NSNumber numberWithInt:serviceKey]];
+    [self.services setObject:service forKey:[NSNumber numberWithInteger:serviceKey]];
 }
 
 @end
