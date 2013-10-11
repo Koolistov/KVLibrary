@@ -40,7 +40,7 @@
 }
 
 - (NSString *)kv_hexString {
-    return [NSString stringWithFormat:@"%0.6lX", [self kv_rgbHex]];
+    return [NSString stringWithFormat:@"%0.6X", (unsigned int)[self kv_rgbHex]];
 }
 
 - (UInt32)kv_rgbHex {
