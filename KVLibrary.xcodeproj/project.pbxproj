@@ -6,6 +6,46 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C7D6E8BC1807AD75003E02C2 /* KVActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C758174816D90999004900CF /* KVActionSheet.m */; };
+		C7D6E8BD1807AD7A003E02C2 /* KVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C758174B16D90999004900CF /* KVAlertView.m */; };
+		C7D6E8BE1807AD7D003E02C2 /* KVCarouselGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */; };
+		C7D6E8BF1807AD82003E02C2 /* KVServiceContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C758175016D90999004900CF /* KVServiceContainer.m */; };
+		C7D6E8C01807AD86003E02C2 /* KVOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */; };
+		C7D6E8C11807AD89003E02C2 /* NSString+KVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A32F2B17FE6EDA00178643 /* NSString+KVUtilities.m */; };
+		C7D6E8C21807AD8C003E02C2 /* UIColor+KVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DCF15C1807AB1C00981162 /* UIColor+KVUtilities.m */; };
+		C7D6E8C71807AF33003E02C2 /* KVPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D6E8C61807AF33003E02C2 /* KVPickerController.m */; };
+		C7DCF1651807AC6C00981162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1641807AC6C00981162 /* Foundation.framework */; };
+		C7DCF1731807AC6C00981162 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1721807AC6C00981162 /* XCTest.framework */; };
+		C7DCF1741807AC6C00981162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1641807AC6C00981162 /* Foundation.framework */; };
+		C7DCF1761807AC6C00981162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1751807AC6C00981162 /* UIKit.framework */; };
+		C7DCF1791807AC6C00981162 /* libKVLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1611807AC6C00981162 /* libKVLibrary.a */; };
+		C7DCF17F1807AC6C00981162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7DCF17D1807AC6C00981162 /* InfoPlist.strings */; };
+		C7DCF1811807AC6C00981162 /* KVLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DCF1801807AC6C00981162 /* KVLibraryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7DCF1771807AC6C00981162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C758172D16D90961004900CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7DCF1601807AC6C00981162;
+			remoteInfo = KVLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7DCF15F1807AC6C00981162 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C758174516D90999004900CF /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
 		C758174716D90999004900CF /* KVActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVActionSheet.h; sourceTree = "<group>"; };
@@ -20,28 +60,69 @@
 		C758175216D90999004900CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCarouselGestureRecognizer.h; sourceTree = "<group>"; };
 		C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCarouselGestureRecognizer.m; sourceTree = "<group>"; };
-		C7A32F2A17FE6EDA00178643 /* NSString+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
-		C7A32F2B17FE6EDA00178643 /* NSString+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		C7A32F2A17FE6EDA00178643 /* NSString+KVUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KVUtilities.h"; sourceTree = "<group>"; };
+		C7A32F2B17FE6EDA00178643 /* NSString+KVUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KVUtilities.m"; sourceTree = "<group>"; };
 		C7A32F2C17FE6F5600178643 /* KVMACROS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVMACROS.h; sourceTree = "<group>"; };
 		C7B91F5B1728430600F8FFD7 /* KVOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOptionsViewController.h; sourceTree = "<group>"; };
 		C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOptionsViewController.m; sourceTree = "<group>"; };
+		C7D6E8C31807ADCA003E02C2 /* KVLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		C7D6E8C51807AF33003E02C2 /* KVPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPickerController.h; sourceTree = "<group>"; };
+		C7D6E8C61807AF33003E02C2 /* KVPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPickerController.m; sourceTree = "<group>"; };
+		C7DCF15B1807AB1C00981162 /* UIColor+KVUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+KVUtilities.h"; sourceTree = "<group>"; };
+		C7DCF15C1807AB1C00981162 /* UIColor+KVUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KVUtilities.m"; sourceTree = "<group>"; };
+		C7DCF1611807AC6C00981162 /* libKVLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKVLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DCF1641807AC6C00981162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7DCF1711807AC6C00981162 /* KVLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DCF1721807AC6C00981162 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C7DCF1751807AC6C00981162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7DCF17C1807AC6C00981162 /* KVLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KVLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		C7DCF17E1807AC6C00981162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7DCF1801807AC6C00981162 /* KVLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVLibraryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7DCF15E1807AC6C00981162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DCF1651807AC6C00981162 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DCF16E1807AC6C00981162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DCF1731807AC6C00981162 /* XCTest.framework in Frameworks */,
+				C7DCF1761807AC6C00981162 /* UIKit.framework in Frameworks */,
+				C7DCF1791807AC6C00981162 /* libKVLibrary.a in Frameworks */,
+				C7DCF1741807AC6C00981162 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C758172C16D90961004900CF = {
 			isa = PBXGroup;
 			children = (
-				C758174516D90999004900CF /* AppledocSettings.plist */,
 				C758174C16D90999004900CF /* KVLibrary.h */,
+				C7D6E8C31807ADCA003E02C2 /* KVLibrary-Prefix.pch */,
 				C7A32F2C17FE6F5600178643 /* KVMACROS.h */,
 				C758174616D90999004900CF /* KVActionSheet */,
 				C758174916D90999004900CF /* KVAlertView */,
 				C765319F16DBCFCB00C97287 /* KVCarousel */,
 				C758174D16D90999004900CF /* KVServiceContainer */,
 				C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */,
-				C7A32F2917FE6EDA00178643 /* NSString+Utilities */,
+				C7D6E8C41807AF33003E02C2 /* KVPickerController */,
+				C7A32F2917FE6EDA00178643 /* NSString+KVUtilities */,
+				C7DCF15A1807AB1C00981162 /* UIColor+KVUtilities */,
 				C758175116D90999004900CF /* LICENSE */,
 				C758175216D90999004900CF /* README.md */,
+				C758174516D90999004900CF /* AppledocSettings.plist */,
+				C7DCF17A1807AC6C00981162 /* KVLibraryTests */,
+				C7DCF1631807AC6C00981162 /* Frameworks */,
+				C7DCF1621807AC6C00981162 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,12 +163,13 @@
 			path = KVCarousel;
 			sourceTree = SOURCE_ROOT;
 		};
-		C7A32F2917FE6EDA00178643 /* NSString+Utilities */ = {
+		C7A32F2917FE6EDA00178643 /* NSString+KVUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				C7A32F2A17FE6EDA00178643 /* NSString+Utilities.h */,
-				C7A32F2B17FE6EDA00178643 /* NSString+Utilities.m */,
+				C7A32F2A17FE6EDA00178643 /* NSString+KVUtilities.h */,
+				C7A32F2B17FE6EDA00178643 /* NSString+KVUtilities.m */,
 			);
+			name = "NSString+KVUtilities";
 			path = "NSString+Utilities";
 			sourceTree = "<group>";
 		};
@@ -100,7 +182,100 @@
 			path = KVOptionsViewController;
 			sourceTree = "<group>";
 		};
+		C7D6E8C41807AF33003E02C2 /* KVPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D6E8C51807AF33003E02C2 /* KVPickerController.h */,
+				C7D6E8C61807AF33003E02C2 /* KVPickerController.m */,
+			);
+			path = KVPickerController;
+			sourceTree = "<group>";
+		};
+		C7DCF15A1807AB1C00981162 /* UIColor+KVUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C7DCF15B1807AB1C00981162 /* UIColor+KVUtilities.h */,
+				C7DCF15C1807AB1C00981162 /* UIColor+KVUtilities.m */,
+			);
+			path = "UIColor+KVUtilities";
+			sourceTree = "<group>";
+		};
+		C7DCF1621807AC6C00981162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7DCF1611807AC6C00981162 /* libKVLibrary.a */,
+				C7DCF1711807AC6C00981162 /* KVLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7DCF1631807AC6C00981162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7DCF1641807AC6C00981162 /* Foundation.framework */,
+				C7DCF1721807AC6C00981162 /* XCTest.framework */,
+				C7DCF1751807AC6C00981162 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7DCF17A1807AC6C00981162 /* KVLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7DCF1801807AC6C00981162 /* KVLibraryTests.m */,
+				C7DCF17B1807AC6C00981162 /* Supporting Files */,
+			);
+			path = KVLibraryTests;
+			sourceTree = "<group>";
+		};
+		C7DCF17B1807AC6C00981162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7DCF17C1807AC6C00981162 /* KVLibraryTests-Info.plist */,
+				C7DCF17D1807AC6C00981162 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7DCF1601807AC6C00981162 /* KVLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DCF1821807AC6C00981162 /* Build configuration list for PBXNativeTarget "KVLibrary" */;
+			buildPhases = (
+				C7DCF15D1807AC6C00981162 /* Sources */,
+				C7DCF15E1807AC6C00981162 /* Frameworks */,
+				C7DCF15F1807AC6C00981162 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVLibrary;
+			productName = KVLibrary;
+			productReference = C7DCF1611807AC6C00981162 /* libKVLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7DCF1701807AC6C00981162 /* KVLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DCF1851807AC6C00981162 /* Build configuration list for PBXNativeTarget "KVLibraryTests" */;
+			buildPhases = (
+				C7DCF16D1807AC6C00981162 /* Sources */,
+				C7DCF16E1807AC6C00981162 /* Frameworks */,
+				C7DCF16F1807AC6C00981162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7DCF1781807AC6C00981162 /* PBXTargetDependency */,
+			);
+			name = KVLibraryTests;
+			productName = KVLibraryTests;
+			productReference = C7DCF1711807AC6C00981162 /* KVLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C758172D16D90961004900CF /* Project object */ = {
@@ -118,12 +293,71 @@
 				en,
 			);
 			mainGroup = C758172C16D90961004900CF;
+			productRefGroup = C7DCF1621807AC6C00981162 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C7DCF1601807AC6C00981162 /* KVLibrary */,
+				C7DCF1701807AC6C00981162 /* KVLibraryTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7DCF16F1807AC6C00981162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DCF17F1807AC6C00981162 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7DCF15D1807AC6C00981162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D6E8BF1807AD82003E02C2 /* KVServiceContainer.m in Sources */,
+				C7D6E8BD1807AD7A003E02C2 /* KVAlertView.m in Sources */,
+				C7D6E8C71807AF33003E02C2 /* KVPickerController.m in Sources */,
+				C7D6E8BE1807AD7D003E02C2 /* KVCarouselGestureRecognizer.m in Sources */,
+				C7D6E8C11807AD89003E02C2 /* NSString+KVUtilities.m in Sources */,
+				C7D6E8BC1807AD75003E02C2 /* KVActionSheet.m in Sources */,
+				C7D6E8C01807AD86003E02C2 /* KVOptionsViewController.m in Sources */,
+				C7D6E8C21807AD8C003E02C2 /* UIColor+KVUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DCF16D1807AC6C00981162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DCF1811807AC6C00981162 /* KVLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7DCF1781807AC6C00981162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7DCF1601807AC6C00981162 /* KVLibrary */;
+			targetProxy = C7DCF1771807AC6C00981162 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7DCF17D1807AC6C00981162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DCF17E1807AC6C00981162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C758173116D90961004900CF /* Debug */ = {
@@ -138,6 +372,178 @@
 			};
 			name = Release;
 		};
+		C7DCF1831807AC6C00981162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/KVLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7DCF1841807AC6C00981162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/KVLibrary.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVLibrary-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7DCF1861807AC6C00981162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVLibrary/KVLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "KVLibraryTests/KVLibraryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C7DCF1871807AC6C00981162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVLibrary/KVLibrary-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "KVLibraryTests/KVLibraryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -146,6 +552,24 @@
 			buildConfigurations = (
 				C758173116D90961004900CF /* Debug */,
 				C758173216D90961004900CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DCF1821807AC6C00981162 /* Build configuration list for PBXNativeTarget "KVLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DCF1831807AC6C00981162 /* Debug */,
+				C7DCF1841807AC6C00981162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DCF1851807AC6C00981162 /* Build configuration list for PBXNativeTarget "KVLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DCF1861807AC6C00981162 /* Debug */,
+				C7DCF1871807AC6C00981162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

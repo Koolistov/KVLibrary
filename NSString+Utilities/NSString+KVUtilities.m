@@ -1,18 +1,18 @@
 //
-//  NSString+Utilities.m
+//  NSString+KVUtilities.m
 //  KVLibrary
 //
 //  Created by Johan Kool on 18/4/2012.
 //  Copyright (c) 2012 Koolistov Pte. Ltd. All rights reserved.
 //
 
-#import "NSString+Utilities.h"
+#import "NSString+KVUtilities.h"
 
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (Utilities)
 
-+ (NSString *)randomStringOfLength:(NSUInteger)length {
++ (NSString *)kv_randomStringOfLength:(NSUInteger)length {
     srandom([[NSDate date] timeIntervalSince1970]);
     
     char randoms[length+1];
@@ -32,7 +32,7 @@
     return [NSString stringWithUTF8String:(const char*)randoms];
 }
 
-- (NSString *)md5Hash {
+- (NSString *)kv_md5Hash {
     unsigned char hashedChars[CC_MD5_DIGEST_LENGTH];
     CC_MD5([self UTF8String],
             (CC_LONG)[self lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
@@ -45,7 +45,7 @@
     return output;
 }
 
-- (NSString *)sha1Hash {
+- (NSString *)kv_sha1Hash {
     unsigned char hashedChars[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1([self UTF8String],
             (CC_LONG)[self lengthOfBytesUsingEncoding:NSUTF8StringEncoding], 
@@ -58,11 +58,24 @@
     return output; 
 }
 
+- (NSString *)kv_sha256Hash {
+    unsigned char hashedChars[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256([self UTF8String],
+            (CC_LONG)[self lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+            hashedChars);
+    NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA256_DIGEST_LENGTH * 2];
+
+    for(int i = 0; i < CC_SHA256_DIGEST_LENGTH; i++) {
+        [output appendFormat:@"%02x", hashedChars[i]];
+    }
+    return output;
+}
+
 // Method based on code obtained from:
 // http://www.thinkmac.co.uk/blog/2005/05/removing-entities-from-html-in-cocoa.html
 //
 
-- (NSString *)decodeHTMLCharacterEntities {
+- (NSString *)kv_decodeHTMLCharacterEntities {
     if ([self rangeOfString:@"&"].location == NSNotFound) {
         return self;
     } else {
@@ -180,7 +193,7 @@
     }
 }
 
-- (NSString *)encodeHTMLCharacterEntities {
+- (NSString *)kv_encodeHTMLCharacterEntities {
     NSMutableString *encoded = [NSMutableString stringWithString:self];
     
     // @"&amp;"
