@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		C7D6E8BC1807AD75003E02C2 /* KVActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C758174816D90999004900CF /* KVActionSheet.m */; };
 		C7D6E8BD1807AD7A003E02C2 /* KVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C758174B16D90999004900CF /* KVAlertView.m */; };
-		C7D6E8BE1807AD7D003E02C2 /* KVCarouselGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */; };
 		C7D6E8BF1807AD82003E02C2 /* KVServiceContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C758175016D90999004900CF /* KVServiceContainer.m */; };
 		C7D6E8C01807AD86003E02C2 /* KVOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */; };
 		C7D6E8C11807AD89003E02C2 /* NSString+KVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A32F2B17FE6EDA00178643 /* NSString+KVUtilities.m */; };
 		C7D6E8C21807AD8C003E02C2 /* UIColor+KVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DCF15C1807AB1C00981162 /* UIColor+KVUtilities.m */; };
 		C7D6E8C71807AF33003E02C2 /* KVPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D6E8C61807AF33003E02C2 /* KVPickerController.m */; };
+		C7D6E8CC1807B961003E02C2 /* KVCarouselGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D6E8CB1807B961003E02C2 /* KVCarouselGestureRecognizer.m */; };
 		C7DCF1651807AC6C00981162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1641807AC6C00981162 /* Foundation.framework */; };
 		C7DCF1731807AC6C00981162 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1721807AC6C00981162 /* XCTest.framework */; };
 		C7DCF1741807AC6C00981162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCF1641807AC6C00981162 /* Foundation.framework */; };
@@ -58,8 +58,6 @@
 		C758175016D90999004900CF /* KVServiceContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVServiceContainer.m; sourceTree = "<group>"; };
 		C758175116D90999004900CF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C758175216D90999004900CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCarouselGestureRecognizer.h; sourceTree = "<group>"; };
-		C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCarouselGestureRecognizer.m; sourceTree = "<group>"; };
 		C7A32F2A17FE6EDA00178643 /* NSString+KVUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KVUtilities.h"; sourceTree = "<group>"; };
 		C7A32F2B17FE6EDA00178643 /* NSString+KVUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KVUtilities.m"; sourceTree = "<group>"; };
 		C7A32F2C17FE6F5600178643 /* KVMACROS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVMACROS.h; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		C7D6E8C31807ADCA003E02C2 /* KVLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		C7D6E8C51807AF33003E02C2 /* KVPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPickerController.h; sourceTree = "<group>"; };
 		C7D6E8C61807AF33003E02C2 /* KVPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPickerController.m; sourceTree = "<group>"; };
+		C7D6E8CA1807B961003E02C2 /* KVCarouselGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVCarouselGestureRecognizer.h; path = Classes/KVCarousel/KVCarouselGestureRecognizer.h; sourceTree = SOURCE_ROOT; };
+		C7D6E8CB1807B961003E02C2 /* KVCarouselGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCarouselGestureRecognizer.m; path = Classes/KVCarousel/KVCarouselGestureRecognizer.m; sourceTree = SOURCE_ROOT; };
 		C7DCF15B1807AB1C00981162 /* UIColor+KVUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+KVUtilities.h"; sourceTree = "<group>"; };
 		C7DCF15C1807AB1C00981162 /* UIColor+KVUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KVUtilities.m"; sourceTree = "<group>"; };
 		C7DCF1611807AC6C00981162 /* libKVLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKVLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,21 +106,11 @@
 		C758172C16D90961004900CF = {
 			isa = PBXGroup;
 			children = (
-				C758174C16D90999004900CF /* KVLibrary.h */,
-				C7D6E8C31807ADCA003E02C2 /* KVLibrary-Prefix.pch */,
-				C7A32F2C17FE6F5600178643 /* KVMACROS.h */,
-				C758174616D90999004900CF /* KVActionSheet */,
-				C758174916D90999004900CF /* KVAlertView */,
-				C765319F16DBCFCB00C97287 /* KVCarousel */,
-				C758174D16D90999004900CF /* KVServiceContainer */,
-				C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */,
-				C7D6E8C41807AF33003E02C2 /* KVPickerController */,
-				C7A32F2917FE6EDA00178643 /* NSString+KVUtilities */,
-				C7DCF15A1807AB1C00981162 /* UIColor+KVUtilities */,
+				C7D6E8C91807B8D5003E02C2 /* Classes */,
 				C758175116D90999004900CF /* LICENSE */,
 				C758175216D90999004900CF /* README.md */,
 				C758174516D90999004900CF /* AppledocSettings.plist */,
-				C7DCF17A1807AC6C00981162 /* KVLibraryTests */,
+				C7DCF17A1807AC6C00981162 /* Tests */,
 				C7DCF1631807AC6C00981162 /* Frameworks */,
 				C7DCF1621807AC6C00981162 /* Products */,
 			);
@@ -157,8 +147,8 @@
 		C765319F16DBCFCB00C97287 /* KVCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				C76531A016DBCFCB00C97287 /* KVCarouselGestureRecognizer.h */,
-				C76531A116DBCFCB00C97287 /* KVCarouselGestureRecognizer.m */,
+				C7D6E8CA1807B961003E02C2 /* KVCarouselGestureRecognizer.h */,
+				C7D6E8CB1807B961003E02C2 /* KVCarouselGestureRecognizer.m */,
 			);
 			path = KVCarousel;
 			sourceTree = SOURCE_ROOT;
@@ -191,6 +181,24 @@
 			path = KVPickerController;
 			sourceTree = "<group>";
 		};
+		C7D6E8C91807B8D5003E02C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C758174C16D90999004900CF /* KVLibrary.h */,
+				C7D6E8C31807ADCA003E02C2 /* KVLibrary-Prefix.pch */,
+				C7A32F2C17FE6F5600178643 /* KVMACROS.h */,
+				C758174616D90999004900CF /* KVActionSheet */,
+				C758174916D90999004900CF /* KVAlertView */,
+				C765319F16DBCFCB00C97287 /* KVCarousel */,
+				C758174D16D90999004900CF /* KVServiceContainer */,
+				C7B91F5A1728430600F8FFD7 /* KVOptionsViewController */,
+				C7D6E8C41807AF33003E02C2 /* KVPickerController */,
+				C7A32F2917FE6EDA00178643 /* NSString+KVUtilities */,
+				C7DCF15A1807AB1C00981162 /* UIColor+KVUtilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		C7DCF15A1807AB1C00981162 /* UIColor+KVUtilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,13 +227,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7DCF17A1807AC6C00981162 /* KVLibraryTests */ = {
+		C7DCF17A1807AC6C00981162 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				C7DCF1801807AC6C00981162 /* KVLibraryTests.m */,
 				C7DCF17B1807AC6C00981162 /* Supporting Files */,
 			);
-			path = KVLibraryTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		C7DCF17B1807AC6C00981162 /* Supporting Files */ = {
@@ -322,10 +330,10 @@
 				C7D6E8BF1807AD82003E02C2 /* KVServiceContainer.m in Sources */,
 				C7D6E8BD1807AD7A003E02C2 /* KVAlertView.m in Sources */,
 				C7D6E8C71807AF33003E02C2 /* KVPickerController.m in Sources */,
-				C7D6E8BE1807AD7D003E02C2 /* KVCarouselGestureRecognizer.m in Sources */,
 				C7D6E8C11807AD89003E02C2 /* NSString+KVUtilities.m in Sources */,
 				C7D6E8BC1807AD75003E02C2 /* KVActionSheet.m in Sources */,
 				C7D6E8C01807AD86003E02C2 /* KVOptionsViewController.m in Sources */,
+				C7D6E8CC1807B961003E02C2 /* KVCarouselGestureRecognizer.m in Sources */,
 				C7D6E8C21807AD8C003E02C2 /* UIColor+KVUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +403,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KVLibrary-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/KVLibrary-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -438,7 +446,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KVLibrary-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/KVLibrary-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
