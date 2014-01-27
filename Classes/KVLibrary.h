@@ -7,10 +7,11 @@
 //
 
 #import "KVMACROS.h"
-#import "KVAlertView.h"
 #import "KVActionSheet.h"
+#import "KVAlertView.h"
+#import "KVCarouselGestureRecognizer.h"
 #import "KVServiceContainer.h"
-#import "KVCarousel.h"
 #import "KVOptionsViewController.h"
+#import "KVPickerController.h"
 #import "NSString+KVUtilities.h"
 #import "UIColor+KVUtilities.h"

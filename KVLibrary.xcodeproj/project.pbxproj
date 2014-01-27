@@ -63,6 +63,7 @@
 		C7A32F2C17FE6F5600178643 /* KVMACROS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVMACROS.h; sourceTree = "<group>"; };
 		C7B91F5B1728430600F8FFD7 /* KVOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOptionsViewController.h; sourceTree = "<group>"; };
 		C7B91F5C1728430600F8FFD7 /* KVOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOptionsViewController.m; sourceTree = "<group>"; };
+		C7BBF26718963F55006D23EC /* KVLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KVLibrary.podspec; sourceTree = "<group>"; };
 		C7D6E8C31807ADCA003E02C2 /* KVLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		C7D6E8C51807AF33003E02C2 /* KVPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPickerController.h; sourceTree = "<group>"; };
 		C7D6E8C61807AF33003E02C2 /* KVPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPickerController.m; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 				C758175116D90999004900CF /* LICENSE */,
 				C758175216D90999004900CF /* README.md */,
 				C758174516D90999004900CF /* AppledocSettings.plist */,
+				C7BBF26718963F55006D23EC /* KVLibrary.podspec */,
 				C7DCF17A1807AC6C00981162 /* Tests */,
 				C7DCF1631807AC6C00981162 /* Frameworks */,
 				C7DCF1621807AC6C00981162 /* Products */,
