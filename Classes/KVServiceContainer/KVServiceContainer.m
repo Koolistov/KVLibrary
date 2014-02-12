@@ -31,33 +31,24 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.services = [NSMutableDictionary dictionaryWithCapacity:10];
+        _services = [NSMutableDictionary dictionaryWithCapacity:10];
     }
-
     return self;
-}
-
-- (id)serviceForKey:(NSUInteger)serviceKey {
-    return [self.services objectForKey:[NSNumber numberWithInteger:serviceKey]];
 }
 
 - (id)serviceForKey:(NSUInteger)serviceKey initializer:(id (^)(void))initializer {
     @synchronized(self) {
-        id service = [self.services objectForKey:[NSNumber numberWithInteger:serviceKey]];
+        id service = [self.services objectForKey:@(serviceKey)];
 
         if (service == nil && initializer != nil) {
             service = initializer();
 
             if (service != nil) {
-                [self setService:service forKey:serviceKey];
+                [self.services setObject:service forKey:@(serviceKey)];
             }
         }
         return service;
     }
-}
-
-- (void)setService:(id)service forKey:(NSUInteger)serviceKey {
-    [self.services setObject:service forKey:[NSNumber numberWithInteger:serviceKey]];
 }
 
 @end
